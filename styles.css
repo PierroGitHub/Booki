@@ -28,14 +28,13 @@ nav ul {
     margin-top: 0px;
 }
 nav li {
-margin-left: 40px;
-margin-top: 0px;
-padding-top: 46px;
-padding-left: 24px;
-padding-right: 27px;
+    margin-top: 0px;
+    padding-top: 46px;
+    padding-left: 33px;
+    padding-right: 33px;
 
 }
-nav ul li:hover {
+nav ul li:hover {  
     border-top: 2px solid #0065FC;
     font-weight: 500;
     
@@ -48,3 +47,54 @@ nav ul li a {
 nav ul li a:hover {
     color: #0065FC;
 }
+
+/*  SEARCH BAR SECTION */
+
+.h1_search_bar {
+    margin-top: 63px;
+    margin-bottom: 8px;
+}
+.p_search_bar {
+    margin-top: 0;
+    
+}
+.search_bar {
+    display: flex;
+}
+#location_icon {
+    height: 49px;
+    width: 50px;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px 0px 0px 15px;
+    border: 1px solid #F2F2F2;
+}
+#search_input {
+    height: 49px;
+    width: 250px;
+    border: none;
+    display: flex;
+    margin-left: 16px;
+    font-size: 18px;
+    outline-width: 0;
+    opacity: 1;
+    
+}
+#button {
+    background-color: #0065FC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 15px 15px 0px;
+    width: 132px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+::placeholder {
+    color: black;
+    font-weight: 700;
+}
+
