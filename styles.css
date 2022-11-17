@@ -161,6 +161,115 @@ section.filters div p {
 div.info p {
     margin-left: 11px;
 }
+/* MAIN Hébergement */
+.main-block {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 39px;
 
+}
+main h2 {
+    font-size: 22px;
+    width: 100%;
+    height: 10px;
+    margin-top: 0px;
+}
+img.img-hébergement {
+    width: 100%;
+    height: 124px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
 
-   
+}
+article.card {
+    background-color: white;
+    border-radius: 20px;
+    height: 199px;
+    width: 29%;
+    padding: 1%;
+    margin-top: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+}
+.nom-hébergement {
+    font-size: 16px;
+    margin-top: 4px;
+    margin-bottom: 0px;
+    margin-left: 16px;
+}
+.prix-nuit {
+    font-size: 14px;
+    margin-top: 9px;
+    margin-left: 16px;
+    margin-bottom: 9px;
+}
+.hébergement {
+ background-color: #F2F2F2;
+ border-radius: 20px;
+ flex: 2;
+ padding-left: 40px;
+ padding-right: 40px;
+ padding-top: 40px;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+}
+#afficher-plus {
+    font-weight: 700;
+    font-size: 18px;
+    height: 21px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+.star-grey {
+    color: #F2F2F2;
+}
+.star-blue {
+    color: #0065FC;
+}
+.star-size {
+    font-size: 12px;
+    margin-left: 16px;
+    margin-top: 9px;
+}
+
+/* Populaire */
+
+.populaire {
+    flex: 1;
+    height: 626px;
+    background-color: #F2F2F2;
+    margin-left: 20px;
+    border-radius: 20px;
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-right: 40px;
+}
+.fa-chart-line {
+    color: #0065FC;
+    font-size: 18px;
+}
+.flex-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+article.card-populaire {
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 33px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+img.img-populaire {
+    object-fit: cover;
+    height: 144px;
+    padding: 1%;
+    border-radius: 20px 0px 0px 20px;
+    width: 30%;
+}
+div.div-populaire {
+    margin-top: 16px;
+}
+.star-populaire {
+    margin-top: 44px;
+}
