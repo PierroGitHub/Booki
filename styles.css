@@ -9,6 +9,7 @@ body {
     margin-left: 50px; 
     margin-right: 50px;
 }
+
 /* GENERAL */
 
 h1 {
@@ -37,6 +38,7 @@ nav li {
     padding-top: 46px;
     padding-left: 33px;
     padding-right: 33px;
+    border-top: 2px solid transparent;
 
 }
 nav ul li:hover {  
@@ -143,6 +145,9 @@ section.filters div p {
     background-color: #DEEBFF;
     cursor: pointer;
 }
+div.dog {
+    min-width: 200px;
+}
 /* INFO */
 .fa-info {
     height: 10px;
@@ -189,9 +194,10 @@ article.card {
     border-radius: 20px;
     height: 199px;
     width: 29%;
-    padding: 1%;
+    padding: 5px;
     margin-top: 0px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
 
 }
 .nom-hébergement {
@@ -223,6 +229,7 @@ article.card {
     height: 21px;
     margin-bottom: 2px;
     margin-top: 2px;
+    width: 100%;
 }
 .star-grey {
     color: #F2F2F2;
@@ -234,6 +241,9 @@ article.card {
     font-size: 12px;
     margin-left: 16px;
     margin-top: 9px;
+}
+p.prix-nuit span {
+    font-weight: bold;
 }
 
 /* Populaire */
@@ -262,10 +272,11 @@ article.card-populaire {
     border-radius: 20px;
     margin-top: 33px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    height: 144px;
+    cursor: pointer;
 }
 img.img-populaire {
     object-fit: cover;
-    height: 144px;
     padding: 1%;
     border-radius: 20px 0px 0px 20px;
     width: 30%;
@@ -273,9 +284,17 @@ img.img-populaire {
 div.div-populaire {
     margin-top: 16px;
 }
-.star-populaire {
-    margin-top: 44px;
+.hotel-bleu-blanc-star {
+    margin-top: 59px;
 }
+.chambres-dhotes-star {
+    margin-top: 41px;
+}
+.hotel-le-soleil-star {
+    margin-top: 40px;
+}
+
+
 /* Activité à Marseille */
 
 h1.activité-marseille {
@@ -298,23 +317,26 @@ div.card-activity {
     width: 21%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 20px 20px 20px 20px;
+    cursor: pointer;
 }
 .nom-activity {
     font-size: 16px;
     margin-top: 15px;
     margin-left: 19px;
 }
-/* FOOTER */
+    /* FOOTER */
 footer {
     height: 225px;
     background-color: #F2F2F2;
     margin-top: 60px;
     display: flex;
+    justify-content: space-between;
+    padding-right: 20%;
 }
 .column-footer {
+    margin-top: 45px;
     margin-left: 70px;
-    padding-top: 45px;
-    margin-right: 150px;
+    
 
 }
 h4 {
@@ -326,3 +348,80 @@ footer p {
     margin-top: 0px;
     margin-bottom: 12px;
 }
+    /* MEDIA QUERY */
+
+@media screen and (max-width: 1250px) {
+    article.card {
+        height: 230px;
+    }
+}
+
+@media screen and (max-width: 1069px) {
+    .chambres-dhotes-star {
+        margin-top: 24px;
+    }
+}
+@media screen and (max-width: 1003px) {
+    .hotel-bleu-blanc-star {
+        margin-top: 39px;
+    }
+}
+
+
+    /* TABLETTE */
+
+@media screen and (max-width: 992px) {  
+    
+    /* HEBERGEMENT */
+
+     .main-block { 
+        flex-direction: column;
+    }
+    article.card {
+        margin-top: 30px;
+        height: 199px;
+    }
+    #afficher-plus {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    /* POPULAIRE */
+    .populaire {  
+        margin-top: 50px;
+        margin-left: 0px;
+    }
+    .flex-space-between-populaire {
+        display: flex;
+        justify-content: space-between;
+    }
+    .card-populaire {
+        margin-bottom: 50px;
+        width: 31%;
+    }
+    .chambres-dhotes-star {
+        margin-top: 22px;
+    }
+    
+    .hotel-bleu-blanc-star {
+        margin-top: 58px;
+    }
+    /* ACTIVITE */
+
+    img.img-activity {
+        height: 211px;
+    }
+    div.activity-content {
+        height: 267px;
+    }
+    h1.activité-marseille {
+        margin-bottom: 34px;
+    }
+} 
+    /* MOBILE */
+
+ @media sreen and (max-width: 768px) {
+
+    body nav {
+        flex: none;
+    }
+ }
