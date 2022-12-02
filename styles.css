@@ -107,13 +107,17 @@ nav ul li a:hover {
 #border-bar {
     border: 1px solid #F2F2F2;
 }
+.search_bar_mobile {
+    display: flex;
+    display: none;
+}
+
 /* FILTERS */
 
 .filters {
     display: flex;
     margin-top: 30px;
     justify-content: space-between;
-    height: 50px;
     width: 60%;
     
 }
@@ -140,6 +144,7 @@ section.filters div p {
     border-radius: 25px;
     padding-left: 10px;
     padding-right: 10px;
+    height: 50px;
 }
 .border-filters:hover{
     background-color: #DEEBFF;
@@ -419,9 +424,174 @@ footer p {
 } 
     /* MOBILE */
 
- @media sreen and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
 
-    body nav {
-        flex: none;
+        /* HEADER */
+
+    nav {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    body {
+        margin: 0px 0px ;
+    }
+    ul {
+        padding-left: 0px;
+    }
+    li {
+        width: 50%;
+        padding-bottom: 23px;
+        border-bottom: 3px solid #F2F2F2;
+    }
+
+    nav ul li:hover {  
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+    }
+    #logo {
+        margin-top: 21px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* SEARCH BAR SECTION */
+
+    .h1_search_bar {
+        margin-top: 30px;
+    }
+    .search_bar_block {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .search_bar_mobile {
+        display: flex;
+    }
+    .search_bar {
+        display: none;
+    }
+    #search_input {
+
+    }
+    #location_icon {
+        width: 110px
+    }
+    #border-bar {
+        width: 232px;
+    }
+    
+    /* FILTERS */
+
+    section.filters {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    div.filtres {
+        width: 100%
+    }
+    .filters {
+        flex-wrap: wrap;
+        width: auto;
+    }
+    section.filters div {
+        justify-content: flex-start;
+    }
+    section.filters div p {
+        font-size: 11px;
+    }
+    div.dog {
+        min-width: 0px;
+    }
+    .border-filters {
+        width: 41%;
+        margin-bottom: 17px;
+    }
+    
+       /* INFO */
+
+       .info {
+        align-items: stretch;
+       }
+       div.info p {
+        margin-top: 0px;
+       }
+       div.info {
+        margin-left: 20px;
+        margin-right: 20px;
+       }
+    /* MAIN BLOCK */
+
+    .main-block {
+        flex-direction: column-reverse;
+        margin-top: 15px;
+    }
+
+    /* POPULAIRE */
+
+    .populaire {
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 0%;
+    }
+    .flex-space-between-populaire {
+        flex-direction: column;
+    }
+    .card-populaire {
+        width: 100%;
+    }
+    article.card-populaire {
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+    aside.populaire {
+        margin-top: 0px;
+        padding-bottom: 40px;
+        padding-top: 20px;
+    }
+    /* HEBERGEMENT */
+
+    .hébergement {
+        background-color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    article.card {
+        width: 100%;
+        margin-top: 12px;
+    }
+    p#afficher-plus {
+        display: none;
+    }
+    /* ACTIVITE */
+
+    h1.activité-marseille {
+        margin-bottom: 0px;
+        max-width: 120px;
+    }
+    #Activités {
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 900px;
+    }
+    div.activity-content {
+        flex-direction: column;
+        height: 800px
+    }
+    div.card-activity {
+        width: 100%;
+    }
+    img.img-activity {
+        height: 134px;
+    }
+    /* FOOTER */
+    footer {
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 60px;
+    }
+    div.column-footer {
+        margin-left: 30px;
     }
  }

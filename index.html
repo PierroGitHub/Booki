@@ -2,6 +2,7 @@
 <html lang="Fr">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="styles.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/217e369d86.js" crossorigin="anonymous"></script>
         <title>Booki</title> 
@@ -16,7 +17,7 @@
                 </ul>
             </nav>
         </header>
-            <section>
+            <section class="search_bar_block">
                 <h1 class="h1_search_bar">Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p class="p_search_bar">En plein centre-ville ou en pleine nature</p>
                 <div class="search_bar">
@@ -24,9 +25,14 @@
                     <div id="border-bar"><input id="search_input" type="search" placeholder="Marseille, France"></div>
                     <div id="button">Rechercher</div>
                 </div>
+                <div class="search_bar_mobile">
+                    <div id="location_icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div id="border-bar"><input id="search_input" type="search" placeholder="Marseille, France"></div>
+                    <div id="button"><i class="fa-solid fa-magnifying-glass"></i></div>
+                </div>
             </section>
             <section class="filters">
-                <div><h2 id="h2-filters">Filtres</h2></div>
+                <div class="filtres"><h2 id="h2-filters">Filtres</h2></div>
                 <div class="border-filters"><i class="filters-icon fa-solid fa-money-bill-wave"></i><p>Économique</p></div>
                 <div class="border-filters"><i class="filters-icon fa-solid fa-person"></i><p>Familial</p></div>
                 <div class="border-filters"><i class="filters-icon fa-sharp fa-solid fa-heart"></i><p>Romantique</p></div>
@@ -122,7 +128,7 @@
                     </div>
                 </aside>
             </main>
-            <section id="Activités" class="activity">
+            <section id="Activités">
                 <h1 class="activité-marseille">Activités à Marseille</h1>
                 <div class="activity-content">
                     <div class="card-activity">
