@@ -85,7 +85,7 @@ nav ul li a:hover {
     display: flex;
     margin-left: 16px;
     font-size: 18px;
-    outline-width: 0;
+    outline: none;
     opacity: 1;
     
 }
@@ -103,6 +103,7 @@ nav ul li a:hover {
 ::placeholder {
     color: black;
     font-weight: 700;
+    opacity: 1;
 }
 #border-bar {
     border: 1px solid #F2F2F2;
@@ -370,12 +371,22 @@ footer p {
     .hotel-bleu-blanc-star {
         margin-top: 39px;
     }
+ 
+    
 }
 
 
     /* TABLETTE */
 
 @media screen and (max-width: 992px) {  
+
+
+
+    /* FILTERS */
+
+    .filters {
+        width: 100%;
+    }
     
     /* HEBERGEMENT */
 
@@ -422,6 +433,20 @@ footer p {
         margin-bottom: 34px;
     }
 } 
+@media screen and (max-width: 958px) {
+    article.card-populaire {
+        height: 180px;
+    }
+}
+@media screen and (max-width: 825px) {
+    .canebière {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+    
+
     /* MOBILE */
 
     @media screen and (max-width: 768px) {
@@ -470,14 +495,43 @@ footer p {
     .search_bar {
         display: none;
     }
-    #search_input {
-
+    #location_icon_mobile {
+        height: 49px;
+        width: 50px;
+        background-color: #F2F2F2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px 0px 0px 15px;
+        border: 1px solid #F2F2F2;
     }
-    #location_icon {
+    #location_icon_mobile {
         width: 110px
     }
-    #border-bar {
+    #border-bar-mobile {
         width: 232px;
+        border: 1px solid #F2F2F2;
+    }
+    #search_input_mobile {
+        height: 49px;
+        width: 250px;
+        border: none;
+        display: flex;
+        margin-left: 16px;
+        font-size: 18px;
+        outline: none;
+        opacity: 1;
+    }
+    #button_mobile {
+        background-color: #0065FC;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0px 15px 15px 0px;
+        width: 132px;
+        color: white;
+        font-weight: 700;
+        cursor: pointer;
     }
     
     /* FILTERS */
@@ -542,11 +596,15 @@ footer p {
     article.card-populaire {
         margin-top: 15px;
         margin-bottom: 5px;
+        height: 144px;
     }
     aside.populaire {
         margin-top: 0px;
         padding-bottom: 40px;
         padding-top: 20px;
+    }
+    .canebière {
+        margin-top: 9px;
     }
     /* HEBERGEMENT */
 
